@@ -33,7 +33,7 @@ class App extends Component {
       };
     this.setState(({ contacts }) => ({
       contacts:[contact, ...contacts] 
-      // contacts: contacts.includes(contact.name) ? alert('is slready') : [contact, ...contacts]   
+      // contacts: contacts.includes(contact.name) ? alert('is slready') : [contact, ...contacts] //  Так можно писать? крутила по разному-не работает.В чем ошибка?
      
     }))
     
