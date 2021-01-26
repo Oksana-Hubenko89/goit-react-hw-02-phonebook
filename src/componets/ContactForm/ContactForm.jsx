@@ -26,7 +26,8 @@ class ContactForm extends Component {
            this.setState({
           [name]: value
        });
-   };
+    };
+    
     handleSubmit = event => {
         event.preventDefault();
         console.log(this.state);
@@ -41,15 +42,12 @@ class ContactForm extends Component {
         })
     };
 
-  
-    
-    
-  
     render(){ 
     
         const { name, number } = this.state;
 
-    return (
+        return (
+            
         <Container>
             <form className={s.Form} onSubmit={this.handleSubmit}>
                 <label>
@@ -66,13 +64,8 @@ class ContactForm extends Component {
             </form>
             
        </Container>
-        
-        
-    )
-  }      
-
-
-}
-
+        )
+    }      
+};
 
 export default ContactForm;
